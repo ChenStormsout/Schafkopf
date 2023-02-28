@@ -1,0 +1,395 @@
+Player 0 has: [['Unter', 'Schelln', 15], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], ['Ober', 'Herz', 18], ['Unter', 'Eichel', 12]]
+Player 1 has: [['9', 'Eichel', 20], ['König', 'Blatt', 9], ['10', 'Schelln', 7], ['10', 'Blatt', 5], ['König', 'Schelln', 11], ['Unter', 'Herz', 14]]
+Player 2 has: [['Ober', 'Blatt', 17], ['König', 'Eichel', 8], ['10', 'Herz', 6], ['9', 'Schelln', 23], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]      
+Player 3 has: [['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]   
+Player 0 is starting.
+The current game mode is: Herz called by Player 0
+Finished to select game mode!
+
+ 
+
+[['Unter', 'Schelln', 15], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], ['Ober', 'Herz', 18], ['Unter', 'Eichel', 12]]       
+[['9', 'Eichel', 20], ['König', 'Blatt', 9], ['10', 'Schelln', 7], ['10', 'Blatt', 5], ['König', 'Schelln', 11], ['Unter', 'Herz', 14]]
+[['Ober', 'Blatt', 17], ['König', 'Eichel', 8], ['10', 'Herz', 6], ['9', 'Schelln', 23], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]
+[['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Player 0 is trying to put the card Schelln Unter.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], ['Ober', 'Herz', 18], ['Unter', 'Eichel', 12]]      
+Player 1 has [['9', 'Eichel', 20], ['König', 'Blatt', 9], ['10', 'Schelln', 7], ['10', 'Blatt', 5], ['König', 'Schelln', 11], ['Unter', 'Herz', 14]] 
+Player 2 has [['Ober', 'Blatt', 17], ['König', 'Eichel', 8], ['10', 'Herz', 6], ['9', 'Schelln', 23], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]       
+Player 3 has [['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]    
+Player 1 is trying to put the card Herz Unter.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], ['Ober', 'Herz', 18], ['Unter', 'Eichel', 12]]      
+Player 1 has [['9', 'Eichel', 20], ['König', 'Blatt', 9], ['10', 'Schelln', 7], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [['Ober', 'Blatt', 17], ['König', 'Eichel', 8], ['10', 'Herz', 6], ['9', 'Schelln', 23], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]       
+Player 3 has [['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Player 2 is trying to put the card Blatt Ober.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], ['Ober', 'Herz', 18], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], ['König', 'Blatt', 9], ['10', 'Schelln', 7], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], ['9', 'Schelln', 23], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]
+Player 3 has [['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Player 3 is trying to put the card Herz König.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], ['Ober', 'Herz', 18], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], ['König', 'Blatt', 9], ['10', 'Schelln', 7], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], ['9', 'Schelln', 23], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], ['Ass', 'Schelln', 3], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Evaluating points of a full stack
+The stack has the following cards:  [['Unter', 'Schelln', 15], ['Unter', 'Herz', 14], ['Ober', 'Blatt', 17], ['König', 'Herz', 10]]
+If statement
+Player 2 gets the stack.
+Sucessfully finished first round!
+
+
+Player 2 is trying to put the card Schelln 9.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], ['Ober', 'Herz', 18], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], ['König', 'Blatt', 9], ['10', 'Schelln', 7], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], ['Ass', 'Schelln', 3], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Player 3 is trying to put the card Schelln Ass.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], ['Ober', 'Herz', 18], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], ['König', 'Blatt', 9], ['10', 'Schelln', 7], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Player 0 is trying to put the card Herz Ober.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], ['König', 'Blatt', 9], ['10', 'Schelln', 7], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Player 1 is trying to put the card Schelln 10.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Ober', 'Eichel', 16], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], ['König', 'Blatt', 9], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Evaluating points of a full stack
+The stack has the following cards:  [['9', 'Schelln', 23], ['Ass', 'Schelln', 3], ['Ober', 'Herz', 18], ['10', 'Schelln', 7]]
+Player 0 gets the stack.
+Sucessfully finished second round!
+
+
+Player 0 is trying to put the card Eichel Ober.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], ['König', 'Blatt', 9], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Player 1 is trying to put the card Blatt König.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], ['Ass', 'Herz', 2], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Player 2 is trying to put the card Herz Ass.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], ['Unter', 'Blatt', 13]]
+Player 3 is trying to put the card Blatt Unter.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Evaluating points of a full stack
+The stack has the following cards:  [['Ober', 'Eichel', 16], ['König', 'Blatt', 9], ['Ass', 'Herz', 2], ['Unter', 'Blatt', 13]]
+If statement
+Player 0 gets the stack.
+Sucessfully finished third round!
+
+
+Player 0 is trying to put the card Schelln Ober.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [['9', 'Eichel', 20], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Player 1 is trying to put the card Eichel 9.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], ['10', 'Herz', 6], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Player 2 is trying to put the card Herz 10.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], ['9', 'Herz', 22], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Player 3 is trying to put the card Herz 9.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['9', 'Blatt', 21], [-1, -1, -1], ['Unter', 'Eichel', 12]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], [-1, -1, -1], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Evaluating points of a full stack
+The stack has the following cards:  [['Ober', 'Schelln', 19], ['9', 'Eichel', 20], ['10', 'Herz', 6], ['9', 'Herz', 22]]
+If statement
+Player 0 gets the stack.
+Sucessfully finished fourth round!
+
+
+Player 0 is trying to put the card Eichel Unter.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['9', 'Blatt', 21], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], ['König', 'Schelln', 11], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], [-1, -1, -1], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Player 1 is trying to put the card Schelln König.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['9', 'Blatt', 21], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['König', 'Eichel', 8], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], [-1, -1, -1], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Player 2 is trying to put the card Eichel König.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['9', 'Blatt', 21], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ass', 'Eichel', 0], [-1, -1, -1], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Player 3 is trying to put the card Eichel Ass.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['9', 'Blatt', 21], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Evaluating points of a full stack
+The stack has the following cards:  [['Unter', 'Eichel', 12], ['König', 'Schelln', 11], ['König', 'Eichel', 8], ['Ass', 'Eichel', 0]]
+Player 0 gets the stack.
+Sucessfully finished fifth round!
+
+
+Player 0 is trying to put the card Blatt 9.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Blatt', 5], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Player 1 is trying to put the card Blatt 10.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Player 2 is trying to put the card Eichel 10.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ass', 'Blatt', 1], [-1, -1, -1]]
+Player 3 is trying to put the card Blatt Ass.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Evaluating points of a full stack
+The stack has the following cards:  [['9', 'Blatt', 21], ['10', 'Blatt', 5], ['10', 'Eichel', 4], ['Ass', 'Blatt', 1]]
+If statement
+Player 3 gets the stack.
+The winners are: Player 2, Player 0 with 89 to 31
+Sucessfully finished sixth round!
+
+
+Game 2
+Player 0 has: [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], ['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has: [['Ass', 'Blatt', 1], ['9', 'Eichel', 20], ['König', 'Schelln', 11], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has: [['König', 'Blatt', 9], ['Unter', 'Herz', 14], ['9', 'Schelln', 23], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has: [['Ass', 'Herz', 2], ['9', 'Herz', 22], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], ['10', 'Blatt', 5], ['Unter', 'Schelln', 15]]
+Player 1 is starting.
+The current game mode is: Eichel called by Player 3
+Finished to select game mode!
+
+
+
+[['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], ['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+[['Ass', 'Blatt', 1], ['9', 'Eichel', 20], ['König', 'Schelln', 11], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+[['König', 'Blatt', 9], ['Unter', 'Herz', 14], ['9', 'Schelln', 23], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+[['Ass', 'Herz', 2], ['9', 'Herz', 22], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], ['10', 'Blatt', 5], ['Unter', 'Schelln', 15]]
+Player 1 is trying to put the card Blatt Ass.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], ['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], ['König', 'Schelln', 11], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [['König', 'Blatt', 9], ['Unter', 'Herz', 14], ['9', 'Schelln', 23], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], ['9', 'Herz', 22], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], ['10', 'Blatt', 5], ['Unter', 'Schelln', 15]]
+Player 2 is trying to put the card Blatt König.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], ['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], ['König', 'Schelln', 11], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], ['9', 'Schelln', 23], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], ['9', 'Herz', 22], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], ['10', 'Blatt', 5], ['Unter', 'Schelln', 15]]
+Player 3 is trying to put the card Blatt 10.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], ['König', 'Herz', 10], ['Ass', 'Schelln', 3], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], ['König', 'Schelln', 11], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], ['9', 'Schelln', 23], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], ['9', 'Herz', 22], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 0 is trying to put the card Herz König.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], ['Ass', 'Schelln', 3], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], ['König', 'Schelln', 11], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], ['9', 'Schelln', 23], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], ['9', 'Herz', 22], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Evaluating points of a full stack
+The stack has the following cards:  [['Ass', 'Blatt', 1], ['König', 'Blatt', 9], ['10', 'Blatt', 5], ['König', 'Herz', 10]]
+Player 0 gets the stack.
+Sucessfully finished first round!
+
+
+Player 0 is trying to put the card Schelln Ass.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], ['König', 'Schelln', 11], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], ['9', 'Schelln', 23], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], ['9', 'Herz', 22], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 1 is trying to put the card Schelln König.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], [-1, -1, -1], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], ['9', 'Schelln', 23], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], ['9', 'Herz', 22], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 2 is trying to put the card Schelln 9.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], [-1, -1, -1], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], ['9', 'Herz', 22], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 3 is trying to put the card Herz 9.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], [-1, -1, -1], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], [-1, -1, -1], ['Ober', 'Schelln', 19], ['König', 'Eichel', 8], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Evaluating points of a full stack
+The stack has the following cards:  [['Ass', 'Schelln', 3], ['König', 'Schelln', 11], ['9', 'Schelln', 23], ['9', 'Herz', 22]]
+Player 3 gets the stack.
+Sucessfully finished second round!
+
+
+Player 3 is trying to put the card Eichel König.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], ['10', 'Herz', 6], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], [-1, -1, -1], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 0 is trying to put the card Herz 10.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], ['9', 'Eichel', 20], [-1, -1, -1], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 1 is trying to put the card Eichel 9.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], ['Ass', 'Eichel', 0], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 2 is trying to put the card Eichel Ass.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['10', 'Schelln', 7]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Evaluating points of a full stack
+The stack has the following cards:  [['König', 'Eichel', 8], ['10', 'Herz', 6], ['9', 'Eichel', 20], ['Ass', 'Eichel', 0]]
+Player 0 gets the stack.
+Sucessfully finished third round!
+
+
+Player 0 is trying to put the card Schelln 10.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], ['9', 'Blatt', 21], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 1 is trying to put the card Blatt 9.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], [-1, -1, -1], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], ['10', 'Eichel', 4]]
+Player 3 has [['Ass', 'Herz', 2], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 2 is trying to put the card Eichel 10.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], [-1, -1, -1], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [['Ass', 'Herz', 2], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Player 3 is trying to put the card Herz Ass.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], [-1, -1, -1], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], ['Unter', 'Schelln', 15]]
+Evaluating points of a full stack
+The stack has the following cards:  [['10', 'Schelln', 7], ['9', 'Blatt', 21], ['10', 'Eichel', 4], ['Ass', 'Herz', 2]]
+Player 3 gets the stack.
+Sucessfully finished fourth round!
+
+
+Player 3 is trying to put the card Schelln Unter.
+Valid move!
+Player 0 has [['Unter', 'Eichel', 12], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], [-1, -1, -1], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 0 is trying to put the card Eichel Unter.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], [-1, -1, -1], ['Ober', 'Blatt', 17]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 is trying to put the card Blatt Ober.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], ['Unter', 'Herz', 14], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 2 is trying to put the card Herz Unter.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Eichel', 16], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Evaluating points of a full stack
+The stack has the following cards:  [['Unter', 'Schelln', 15], ['Unter', 'Eichel', 12], ['Ober', 'Blatt', 17], ['Unter', 'Herz', 14]]
+If statement
+Player 1 gets the stack.
+Sucessfully finished fifth round!
+
+
+Player 1 is trying to put the card Eichel Ober.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], ['Ober', 'Herz', 18], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 2 is trying to put the card Herz Ober.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], ['Ober', 'Schelln', 19], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 3 is trying to put the card Schelln Ober.
+Valid move!
+Player 0 has [[-1, -1, -1], ['Unter', 'Blatt', 13], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 0 is trying to put the card Blatt Unter.
+Valid move!
+Player 0 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 1 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 2 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Player 3 has [[-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+Evaluating points of a full stack
+The stack has the following cards:  [['Ober', 'Eichel', 16], ['Ober', 'Herz', 18], ['Ober', 'Schelln', 19], ['Unter', 'Blatt', 13]]
+If statement
+Player 1 gets the stack.
+The winners are: Player 0, Player 1 with 74 to 46
+Sucessfully finished sixth round!
