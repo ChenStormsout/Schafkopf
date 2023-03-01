@@ -1,7 +1,7 @@
 from abc import abstractclassmethod
 import numpy as np
-import gym
-from gym import spaces
+import gymnasium as gym
+from gymnasium import spaces
 
 # Grundtarif = 5; Solotarif = 20
 # Sie = vierfacher Solotarif,
