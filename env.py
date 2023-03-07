@@ -470,10 +470,11 @@ class NaivPlayer:
         random_move=self.rng.choice(valid_options)
         return_values=self.schafkopf_env.step(random_move)
         if return_values[2]:
+            print("Game has ended. New Game starting.\n\n")
             self.schafkopf_env.reset()
 
 naivplayer=NaivPlayer(SchafkopfEnv())
-for _ in range(1000):
+for _ in range(400):
     naivplayer.step()
 
 # env = SchafkopfEnv()
