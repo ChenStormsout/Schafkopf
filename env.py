@@ -132,10 +132,10 @@ class Player:
         self.cards[card_index] = None
         return True, stack_full
 
-    def change_player_position(self):
-        self.position += 1
-        if self.position > 3:
-            self.position = 0
+    # def change_player_position(self):
+    #     self.position += 1
+    #     if self.position > 3:
+    #         self.position = 0
 
 
 def generate_card_deck(rng):
@@ -179,6 +179,7 @@ class Sauspiel(GameMode):
         self.name = "Sauspiel"
         self.card_symbol = card_sympbol
         self.calling_players = []
+        self.countering_players = []
 
     def define_teams(self, players, calling_player_idx):
         calling_player = players[calling_player_idx]
@@ -255,17 +256,17 @@ class Sauspiel(GameMode):
                 for idx in range(len(highest_cards))
                 if cards_type_value[idx] == max_cards_type_value
             ]
-        if len(highest_cards) > 1:
-            cards_symbol_value = [
-                card_symbol_hierarchy_dict[card.symbol]
-                for card in card_stack.card_dict.values()
-            ]
-            max_cards_symbol_value = max(cards_symbol_value)
-            highest_cards = [
-                highest_cards[idx]
-                for idx in range(len(highest_cards))
-                if cards_symbol_value[idx] == max_cards_symbol_value
-            ]
+            if len(highest_cards) > 1:
+                cards_symbol_value = [
+                    card_symbol_hierarchy_dict[card.symbol]
+                    for card in highest_cards
+                ]
+                max_cards_symbol_value = max(cards_symbol_value)
+                highest_cards = [
+                    highest_cards[idx]
+                    for idx in range(len(highest_cards))
+                    if cards_symbol_value[idx] == max_cards_symbol_value
+                ]
         highest_card_position = np.argmax(
             [highest_cards[0] == card for card in card_stack.card_dict.values()]
         )
@@ -297,18 +298,18 @@ class Sauspiel(GameMode):
         return 0
 
     def check_called_sau(self, stack, card,player):
-        if self.card_symbol == stack.card_dict[0].symbol:
+        if self.check_color(card) == self.check_color(stack.card_dict[0]) and self.card_symbol == stack.card_dict[0].symbol and self.card_symbol==card.symbol:
             if max([player_card.card_type=="Ass" and player_card.symbol == self.card_symbol for player_card in player.cards if not player_card is None])!=0:
                 if card.card_type != "Ass" or card.symbol != self.card_symbol:
                     return False    
         return True
 
 
-class CustomEnv(gym.Env):
+class SchafkopfEnv(gym.Env):
     """Custom Environment that follows gym interface"""
 
     def __init__(self, random_seed=42):
-        super(CustomEnv, self).__init__()
+        super(SchafkopfEnv, self).__init__()
         self.game_modes = [
             Sauspiel("Eichel"),
             Sauspiel("Blatt"),
@@ -397,18 +398,18 @@ class CustomEnv(gym.Env):
                 game_mode_rankings = [gamemode_dict[game_mode.name] if not game_mode is None else -1 for game_mode in self.game_mode_offers.values()]
                 max_ranking = max(game_mode_rankings)
                 high_game_modes=[]
-                for idx in self.game_mode_offers.keys():
+                for idx,game_mode in enumerate(self.game_mode_offers.values()):
                     if game_mode_rankings[idx]==max_ranking:
-                        high_game_modes.append(self.game_mode_offers[idx])
+                        high_game_modes.append(game_mode)
                 if len(high_game_modes)>1:
                     game_mode_rankings=[card_symbol_hierarchy_dict[mode.card_symbol] for mode in high_game_modes if not mode is None]
-                    max_ranking = np.argmax(game_mode_rankings)
+                    max_ranking = np.argmax(game_mode_rankings) #here
                     high_game_modes=[high_game_modes[max_ranking]]
                 player_w_highest_offering=np.argmax([True if mode==high_game_modes[0] else False for mode in self.game_mode_offers.values()])
                 game_mode_idx=np.argmax([[True if mode==high_game_modes[0] else False for mode in self.game_modes]])
                 self.set_game_mode(game_mode_idx,player_w_highest_offering)
                 print(f"The current game mode is: {self.current_game_mode.card_symbol} called by Player {player_w_highest_offering}")
-                return self.get_state(), 0, False, dict()
+            return self.get_state(), 0, False, dict()
         else:
             print(
                 f"Player {self.players[self.players_turn].position} is trying to put the card {self.players[self.players_turn].cards[action].symbol +' '+self.players[self.players_turn].cards[action].card_type}."
@@ -425,6 +426,7 @@ class CustomEnv(gym.Env):
                 print("Valid move!")
             else:
                 print("Invalid move!")
+                raise ValueError("Player has chosen invalid move!")
             for player in self.players.values():
                 print(f"Player {player.position} has", player.show_cards())
             observation = self.get_state()
@@ -445,127 +447,155 @@ class CustomEnv(gym.Env):
 
             return observation, reward, done, dict()
 
+class NaivPlayer:
+    def __init__(self,schafkopf_env,random_seed=42) -> None:
+        # self.player_number=player_number
+        self.rng = np.random.default_rng(random_seed)
+        self.schafkopf_env=schafkopf_env
+        self.schafkopf_env.reset()
 
-env = CustomEnv()
-obs = env.reset()
-step_values = env.step(3)
-step_values = env.step(0)
-step_values = env.step(0)
-step_values = env.step(0)
-print("Finished to select game mode!")
-# print(obs)
-# for ob in obs:
-#     print(ob)
-print("\n \n")
-for player in env.players.values():
-    print(player.show_cards())
+    def step(self):
+        player_himself=self.schafkopf_env.players[self.schafkopf_env.players_turn]
+        current_game_mode=self.schafkopf_env.current_game_mode
+        stack=self.schafkopf_env.card_stack
+        valid_options=[]
+        if current_game_mode is None:
+            valid_options=list(range(len(self.schafkopf_env.game_modes)))
+        else:
+            for idx, card in enumerate(player_himself.cards):
+                if card is None:
+                    continue
+                if current_game_mode.check_if_valid_move(player_himself, idx, stack):
+                    valid_options.append(idx)
+        random_move=self.rng.choice(valid_options)
+        return_values=self.schafkopf_env.step(random_move)
+        if return_values[2]:
+            self.schafkopf_env.reset()
 
-step_values = env.step(0)
-step_values = env.step(5)
-step_values = env.step(0)
-step_values = env.step(0)
-if step_values[1] == 1:
-    print("Sucessfully finished first round! \n \n")
-else:
-    print("Failed to finish first round \n \n")
-step_values = env.step(3)
-step_values = env.step(1)
-step_values = env.step(4)
-step_values = env.step(2)
-if step_values[1] == 1:
-    print("Sucessfully finished second round! \n \n")
-else:
-    print("Failed to finish second round \n \n")
-step_values = env.step(1)
-step_values = env.step(1)
-step_values = env.step(4)
-step_values = env.step(5)
-if step_values[1] == 1:
-    print("Sucessfully finished third round! \n \n")
-else:
-    print("Failed to finish third round \n \n")
-step_values = env.step(2)
-step_values = env.step(0)
-step_values = env.step(2)
-step_values = env.step(3)
-if step_values[1] == 1:
-    print("Sucessfully finished fourth round! \n \n")
-else:
-    print("Failed to finish fourth round \n \n")
-step_values = env.step(5)
-step_values = env.step(4)
-step_values = env.step(1)
-step_values = env.step(2)
-if step_values[1] == 1:
-    print("Sucessfully finished fifth round! \n \n")
-else:
-    print("Failed to finish fifth round \n \n")
-step_values = env.step(3)
-step_values = env.step(3)
-step_values = env.step(5)
-step_values = env.step(4)
-if step_values[1] == 1:
-    print("Sucessfully finished sixth round! \n \n")
-else:
-    print("Failed to finish sixth round \n \n")
+naivplayer=NaivPlayer(SchafkopfEnv())
+for _ in range(1000):
+    naivplayer.step()
 
-print("Game 2")
-obs = env.reset()
-step_values = env.step(4)
-step_values = env.step(3)
-step_values = env.step(2)
-step_values = env.step(1)
+# env = SchafkopfEnv()
+# obs = env.reset()
+# step_values = env.step(3)
+# step_values = env.step(0)
+# step_values = env.step(0)
+# step_values = env.step(0)
+# print("Finished to select game mode!")
+# # print(obs)
+# # for ob in obs:
+# #     print(ob)
+# print("\n \n")
+# for player in env.players.values():
+#     print(player.show_cards())
 
-print("Finished to select game mode!")
-print("\n \n")
-for player in env.players.values():
-    print(player.show_cards())
+# step_values = env.step(0)
+# step_values = env.step(5)
+# step_values = env.step(0)
+# step_values = env.step(0)
+# if step_values[1] == 1:
+#     print("Sucessfully finished first round! \n \n")
+# else:
+#     print("Failed to finish first round \n \n")
+# step_values = env.step(3)
+# step_values = env.step(1)
+# step_values = env.step(4)
+# step_values = env.step(2)
+# if step_values[1] == 1:
+#     print("Sucessfully finished second round! \n \n")
+# else:
+#     print("Failed to finish second round \n \n")
+# step_values = env.step(1)
+# step_values = env.step(1)
+# step_values = env.step(4)
+# step_values = env.step(5)
+# if step_values[1] == 1:
+#     print("Sucessfully finished third round! \n \n")
+# else:
+#     print("Failed to finish third round \n \n")
+# step_values = env.step(2)
+# step_values = env.step(0)
+# step_values = env.step(2)
+# step_values = env.step(3)
+# if step_values[1] == 1:
+#     print("Sucessfully finished fourth round! \n \n")
+# else:
+#     print("Failed to finish fourth round \n \n")
+# step_values = env.step(5)
+# step_values = env.step(4)
+# step_values = env.step(1)
+# step_values = env.step(2)
+# if step_values[1] == 1:
+#     print("Sucessfully finished fifth round! \n \n")
+# else:
+#     print("Failed to finish fifth round \n \n")
+# step_values = env.step(3)
+# step_values = env.step(3)
+# step_values = env.step(5)
+# step_values = env.step(4)
+# if step_values[1] == 1:
+#     print("Sucessfully finished sixth round! \n \n")
+# else:
+#     print("Failed to finish sixth round \n \n")
 
-step_values = env.step(0)
-step_values = env.step(0)
-step_values = env.step(4)
-step_values = env.step(2)
-if step_values[1] == 1:
-    print("Sucessfully finished first round! \n \n")
-else:
-    print("Failed to finish first round \n \n")
-step_values = env.step(3)
-step_values = env.step(2)
-step_values = env.step(2)
-step_values = env.step(1)
-if step_values[1] == 1:
-    print("Sucessfully finished second round! \n \n")
-else:
-    print("Failed to finish second round \n \n")
-step_values = env.step(3)
-step_values = env.step(4)
-step_values = env.step(1)
-step_values = env.step(4)
-if step_values[1] == 1:
-    print("Sucessfully finished third round! \n \n")
-else:
-    print("Failed to finish third round \n \n")
-step_values = env.step(5)
-step_values = env.step(4)
-step_values = env.step(5)
-step_values = env.step(0)
-if step_values[1] == 1:
-    print("Sucessfully finished fourth round! \n \n")
-else:
-    print("Failed to finish fourth round \n \n")
-step_values = env.step(5)
-step_values = env.step(0)
-step_values = env.step(5)
-step_values = env.step(1)
-if step_values[1] == 1:
-    print("Sucessfully finished fifth round! \n \n")
-else:
-    print("Failed to finish fifth round \n \n")
-step_values = env.step(3)
-step_values = env.step(3)
-step_values = env.step(2)
-step_values = env.step(1)
-if step_values[1] == 1:
-    print("Sucessfully finished sixth round! \n \n")
-else:
-    print("Failed to finish sixth round \n \n")
+# print("Game 2")
+# obs = env.reset()
+# step_values = env.step(4)
+# step_values = env.step(3)
+# step_values = env.step(2)
+# step_values = env.step(1)
+
+# print("Finished to select game mode!")
+# print("\n \n")
+# for player in env.players.values():
+#     print(player.show_cards())
+
+# step_values = env.step(0)
+# step_values = env.step(0)
+# step_values = env.step(4)
+# step_values = env.step(2)
+# if step_values[1] == 1:
+#     print("Sucessfully finished first round! \n \n")
+# else:
+#     print("Failed to finish first round \n \n")
+# step_values = env.step(3)
+# step_values = env.step(2)
+# step_values = env.step(2)
+# step_values = env.step(1)
+# if step_values[1] == 1:
+#     print("Sucessfully finished second round! \n \n")
+# else:
+#     print("Failed to finish second round \n \n")
+# step_values = env.step(3)
+# step_values = env.step(4)
+# step_values = env.step(1)
+# step_values = env.step(4)
+# if step_values[1] == 1:
+#     print("Sucessfully finished third round! \n \n")
+# else:
+#     print("Failed to finish third round \n \n")
+# step_values = env.step(5)
+# step_values = env.step(4)
+# step_values = env.step(5)
+# step_values = env.step(0)
+# if step_values[1] == 1:
+#     print("Sucessfully finished fourth round! \n \n")
+# else:
+#     print("Failed to finish fourth round \n \n")
+# step_values = env.step(5)
+# step_values = env.step(0)
+# step_values = env.step(5)
+# step_values = env.step(1)
+# if step_values[1] == 1:
+#     print("Sucessfully finished fifth round! \n \n")
+# else:
+#     print("Failed to finish fifth round \n \n")
+# step_values = env.step(3)
+# step_values = env.step(3)
+# step_values = env.step(2)
+# step_values = env.step(1)
+# if step_values[1] == 1:
+#     print("Sucessfully finished sixth round! \n \n")
+# else:
+#     print("Failed to finish sixth round \n \n")
