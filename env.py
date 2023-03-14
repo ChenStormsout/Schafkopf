@@ -452,9 +452,9 @@ class NaivPlayer:
         # self.player_number=player_number
         self.rng = np.random.default_rng(random_seed)
         self.schafkopf_env=schafkopf_env
-        self.schafkopf_env.reset()
+        # self.schafkopf_env.reset()
 
-    def step(self):
+    def auto_step(self):
         player_himself=self.schafkopf_env.players[self.schafkopf_env.players_turn]
         current_game_mode=self.schafkopf_env.current_game_mode
         stack=self.schafkopf_env.card_stack
@@ -472,10 +472,26 @@ class NaivPlayer:
         if return_values[2]:
             print("Game has ended. New Game starting.\n\n")
             self.schafkopf_env.reset()
+    def step(self):
+        player_himself=self.schafkopf_env.players[self.schafkopf_env.players_turn]
+        current_game_mode=self.schafkopf_env.current_game_mode
+        stack=self.schafkopf_env.card_stack
+        valid_options=[]
+        if current_game_mode is None:
+            valid_options=list(range(len(self.schafkopf_env.game_modes)))
+        else:
+            for idx, card in enumerate(player_himself.cards):
+                if card is None:
+                    continue
+                if current_game_mode.check_if_valid_move(player_himself, idx, stack):
+                    valid_options.append(idx)
+        random_move=self.rng.choice(valid_options)
+        return random_move
 
-naivplayer=NaivPlayer(SchafkopfEnv())
-for _ in range(400):
-    naivplayer.step()
+if __name__=="__main__":
+    naivplayer=NaivPlayer(SchafkopfEnv())
+    for _ in range(400):
+        naivplayer.auto_step()
 
 # env = SchafkopfEnv()
 # obs = env.reset()
